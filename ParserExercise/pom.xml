@@ -1,0 +1,69 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.shivdev</groupId>
+  <artifactId>ParserExercise</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+
+	<dependencies>
+	
+		<!-- https://mvnrepository.com/artifact/de.tudarmstadt.ukp.wikipedia/de.tudarmstadt.ukp.wikipedia.api -->
+		<dependency>
+		    <groupId>de.tudarmstadt.ukp.wikipedia</groupId>
+		    <artifactId>de.tudarmstadt.ukp.wikipedia.api</artifactId>
+		    <version>1.1.0</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.json/json -->
+		<dependency>
+		    <groupId>org.json</groupId>
+		    <artifactId>json</artifactId>
+		    <version>20211205</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
+		<dependency>
+		    <groupId>org.junit.jupiter</groupId>
+		    <artifactId>junit-jupiter-api</artifactId>
+		    <version>5.7.0</version>
+		    <scope>test</scope>
+		</dependency>
+
+		
+		<!-- https://mvnrepository.com/artifact/org.powermock/powermock-module-junit4 -->
+		
+		<dependency>
+		    <groupId>org.powermock</groupId>
+		    <artifactId>powermock-api-mockito</artifactId>
+		    <version>1.6.4</version>
+		    <scope>test</scope>
+		</dependency>
+
+
+<dependency>
+    <groupId>org.powermock</groupId>
+    <artifactId>powermock-module-junit4</artifactId>
+    <version>1.6.4</version>
+    <scope>test</scope>
+</dependency>
+
+
+	</dependencies>
+		<build>
+		<plugins>
+		 <plugin>
+		    <groupId>org.apache.maven.plugins</groupId>
+		    <artifactId>maven-surefire-plugin</artifactId>
+		    <version>2.19.1</version>
+		    <configuration>
+		        <testFailureIgnore>true</testFailureIgnore>
+		    </configuration>
+		</plugin>
+		</plugins>
+		</build>
+
+
+		<properties>
+	   	  <maven.compiler.source>7</maven.compiler.source>
+	   	  <maven.compiler.target>7</maven.compiler.target>
+		</properties>
+</project>
